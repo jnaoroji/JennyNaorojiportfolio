@@ -2,80 +2,149 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial;
-    margin: 0;
+/* my color palette */
+:root {
+    --background: #F9F6F0;
+    --darkG:#808274;
+    --LightG:#b7b4a2;
+    --Violet:#42373a;
+    --pic: #dfc1b8;
   }
-  
   header {
-    padding: 40px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
+    padding:  5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    background:var(--LightG);
+    color: black;
   }
-  
+
   nav {
     display: flex;
-    background-color: #d8a47f;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:  20px;
+    margin:5px;
   }
-  
-  nav a {
-    color: #13293d;
-    padding: 14px 20px;
+  nav a{
+    font-size: larger;
     text-decoration: none;
-    text-align: center;
+    color: black;
+    margin: 5px;
+    padding:5px;
+  }
+
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    line-height: 1.5;
+  }
+  .Across{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+ 
+  #aboutme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-content: end;
+  }
+
+  .profile, img {
+    position:flex;
+    flex-direction: row;
+    right: 100px;
+    height: 300px;
+    width: fit-content;
+    background-color: var(--pic);
+    padding: 5px;
+    border: 1px solid var(--darkG);
+    
+  }
+
+  #mywork {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:20px;
   }
   
-  main {
+  .Total {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 630px;
+    padding: 5px;
+    margin: 5px;
+  }
+ 
+  .BigOne {
+    display: flex;
+    flex-wrap: wrap;
+    Height:300px;
+    width: 600px;
+    align-items: flex-end;
+    border: 5px solid var(--secondary);
+    flex-basis: 1;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid var(--darkG);
+  }
+  .SmallOne {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--darkG);
+    Height:150px;
+    width: 300px;
+    align-items: flex-end;
+    padding: 5px;
+    margin: 5px;
+  
+  }
+  .BigOne{
+    background-image: url(../images/placeholder.png) ;
+    
+  }
+  .SmallOne{
+    background-image: url(../images/placeholder.png) ;
+  }
+  h2 {
+    text-align: left;
+  }
+
+  h3 {
+    text-align: left;
   }
   
-  aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px;
+  #contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
   }
-  
-  section {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  .sample-img {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
-  }
-  
   footer {
     padding: 20px;
     text-align: center;
-    background: #13293d;
-    color: #fff;
+    background:var(--LightG);
+    color: black;
   }
   
   @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     main,
-    nav {
+    nav, 
+    aside {
       flex-direction: column;
     }
-    /* Make the sidebar stack below the body */
-    aside {
-      order: 2;
-    }
-    /* Change the header background */
-    header {
-      background: #772014;
-    }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  }
-  
+}
