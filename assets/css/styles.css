@@ -65,12 +65,10 @@
     flex-wrap: wrap;
     align-items: baseline;
     margin-right: 30px;
-    text-decoration: underline var(--darkG);
-   
-  }
-  h3{
     font-size: larger;
+    text-decoration: underline var(--darkG);
   }
+  
    /* Styling for the image in the banner */
    .profile, img {
     position:flex;
@@ -91,24 +89,32 @@
     align-items: stretch;
     justify-content: space-between;
     margin-right: 30px;
-  }
-  /* styling specifies layout for the id about me */
-  #aboutme {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 20px;
-    align-content: end;
   }
+  
   /* Styling for the paragraph within the about me section */
   .para{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 800px;
+    text-align: justify;
   }
   /* Styling for my work section */
-  #mywork {
+  .title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: auto;
+    min-width: 200px;
+    border-right: 5px solid var(--LightG);
+    padding-right: 10px;
+    text-decoration: none;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  
+  .work {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,7 +122,6 @@
     align-items: stretch;
     justify-content: space-between;
   }
-  
   .Total {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +133,6 @@
     margin-right: 30px;
     border: 10px;
   }
- 
   .BigOne {
     background-image: url(../images/Bigone.jpg) ;
     background-size: cover;
@@ -177,6 +181,7 @@
     opacity: 50%;
     background-size: cover;
   }
+  /* styling for text within each anchor element */
   .text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -187,12 +192,6 @@
     padding: 5px;
     margin: 5px;
     border:1px var(--darkG);
-  }
-  
-  /* styling for all h2s */
-  h2 {
-    text-align: left;
-    margin-left: 20px;
   }
   /* Styling for contact section */
   .contact{
@@ -218,18 +217,25 @@
   }
   
   /* Styling makes the layout responsive to my viewport */
-  /* flex-direction stacks the classes named below in a column */
-  /* content is all aligned to center as view becomes smaller */
+  
+  /* Styling makes border-right dissappear and underline appear as screen gets smaller */
+  @media screen and (max-width: 1133px) {
+    .title{
+      border-right: none;
+      text-decoration: underline var(--LightG);
+    }
+  }
+  /* Styling stacks content in a column and aligns to center as screen gets smaller */
+  /* Styling decreases the width of largest application image */
+  /* Styling decreases banner font size */
+
   @media screen and (max-width: 768px) {
-   
     header, 
     nav,
-    .banner
+    .title,
     .Across, 
-    #aboutme,
     .para,
     .work,
-    #mywork,
     .Total,
     .contact,
     .info {
@@ -238,5 +244,12 @@
       align-items: center;
       text-align: center;
     }
-   
-}
+
+    .BigOne {
+      width: 400px;
+    }
+    div, h3 {
+      font-size:medium;
+    }
+    
+  }
