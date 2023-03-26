@@ -18,6 +18,7 @@
     flex-direction: row;
     align-items: center;
     text-align: left;
+    margin-left: 30px;
     justify-content: space-between;
     background:var(--background);
     color: black;
@@ -57,13 +58,18 @@
     justify-content: space-between;
    
   }
+
   /* Styling for the elements within the banner */
-  div, h3{
+  div, h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-right: 20px;
+    margin-right: 30px;
     text-decoration: underline var(--darkG);
+   
+  }
+  h3{
+    font-size: larger;
   }
    /* Styling for the image in the banner */
    .profile, img {
@@ -75,7 +81,7 @@
     border: 5px solid var(--darkG);
     border-radius: 50%;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   /* Styling for the Across section of the webpage */
   .Across{
@@ -84,6 +90,7 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
+    margin-right: 30px;
   }
   /* styling specifies layout for the id about me */
   #aboutme {
@@ -118,11 +125,13 @@
     max-width: 800px;
     padding: 10px;
     margin: 10px;
+    margin-right: 30px;
     border: 10px;
-    
   }
  
   .BigOne {
+    background-image: url(../images/Bigone.jpg) ;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -132,10 +141,11 @@
     margin: 5px;
     border: 5px solid var(--darkG);
     align-items: flex-end;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: black;
+  }
+  .BigOne:hover {
+    background-image: url(../images/Bigone.jpg);
+    opacity: 50%;
+    background-size: cover;
   }
   .SmallOne, .Portfolio {
     display: flex;
@@ -147,22 +157,8 @@
     margin: 5px;
     border: 5px solid var(--darkG);
     align-items: flex-end;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: black;
+  }
 
-  }
-  .BigOne{
-    background-image: url(../images/Bigone.jpg) ;
-    background-size: cover;
-    
-  }
-  .BigOne:hover {
-    background-image: url(../images/Bigone.jpg);
-    opacity: 50%;
-    background-size: cover;
-  }
   .SmallOne{
     background-image: url(../images/Study.jpeg) ;
     background-size: cover;
@@ -181,36 +177,11 @@
     opacity: 50%;
     background-size: cover;
   }
-  .BigOne > a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: var(--Violet);
-    background-color: var(--LightG);
-    padding: 5px;
-    margin: 5px;
-    border:1px var(--darkG);
-  }
-  .SmallOne > a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: var(--Violet);
-    background-color: var(--LightG);
-    padding: 5px;
-    margin: 5px;
-    border:1px var(--darkG);
-  }
-  .Portfolio > a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: var(--Violet);
-    background-color: var(--LightG);
-    padding: 5px;
-    margin: 5px;
-    border:1px var(--darkG);
-  }
+  
   /* styling for all h2s */
   h2 {
     text-align: left;
+    margin-left: 20px;
   }
   /* Styling for contact section */
   .contact{
@@ -221,7 +192,6 @@
     text-align: left;
     justify-content: space-between;
     text-decoration: none;
-    font-size: large;
     color: black;
   }
   .info, a{
@@ -237,7 +207,7 @@
   }
   
   /* Styling makes the layout responsive to my viewport */
-  /* flex-direction stacks the header, nav, Across, work and contact */
+  /* flex-direction stacks the classes named below in a column */
   /* content is all aligned to center as view becomes smaller */
   @media screen and (max-width: 768px) {
    
