@@ -8,7 +8,7 @@ My Challenge is to create a web application from scratch! Build a portfolio page
 ## Usage
 
 To use this website, you can review the notes in each section. Click on the links to see my work!
-You can also click this link to the site: https://jnaoroji.github.io/code-refactor-challenge/
+You can also click this link to the site: https://jnaoroji.github.io/JennyNaorojiportfolio/
 
 ## Credits
 

@@ -8,8 +8,6 @@
     --darkG:#808274;
     --LightG:#b7b4a2;
     --Violet:#42373a;
-    --pic: #dfc1b8;
-    --darkpic: #c79a96;
   }
   /* Styling for header */
   header {
@@ -92,7 +90,7 @@
     padding: 20px;
   }
   
-  /* Styling for the paragraph within the about me section */
+  /* Styling for the paragraph*/
   .para{
     display:flex;
     flex-direction: row;
@@ -100,7 +98,7 @@
     max-width: 800px;
     text-align: justify;
   }
-  /* Styling for my work section */
+  /* Styling for the h2 elements under class title */
   .title{
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +111,7 @@
     align-items: flex-start;
     margin-left: 20px;
   }
-  
+   /* Styling for my work section */
   .work {
     display: flex;
     flex-direction: row;
@@ -122,6 +120,7 @@
     align-items: stretch;
     justify-content: space-between;
   }
+  /* styling for div with class Total */
   .Total {
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +132,7 @@
     margin-right: 30px;
     border: 10px;
   }
+  /* styling for the bigger image of deployed application */
   .BigOne {
     background-image: url(../images/Bigone.jpg) ;
     background-size: cover;
@@ -146,11 +146,13 @@
     border: 5px solid var(--darkG);
     align-items: flex-end;
   }
+  /* Styling for when you hover over big image */
   .BigOne:hover {
     background-image: url(../images/Bigone.jpg);
     opacity: 50%;
     background-size: cover;
   }
+  /* Styling for all smaller images of deployed applications */
   .SmallOne, .Portfolio {
     display: flex;
     flex-wrap: wrap;
