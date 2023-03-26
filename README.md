@@ -104,3 +104,35 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
+# 02 Advanced CSS: Jenny Naoroji's Portfolio
+
+## Description
+
+My Challenge is to create a web application from scratch! Build a portfolio page, targetted for potential employers, which showcases my strongest work. This is something I can add to as the course progresses.
+
+
+## Usage
+
+To use this website, you can review the notes in each section. Click on the links to see my work!
+You can also click this link to the site: https://jnaoroji.github.io/code-refactor-challenge/
+
+## Credits
+
+* https://developer.mozilla.org/en-US/docs/Learn/HTML
+* https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet
+
+
+## License
+
+Please refer to the LICENSE in the repo.
+
+## Test
+
+The Webpage should look like this:
+* The following animation shows the web application's mock appearance and functionality:
+
+![portfolio demo](./assets/images/02-advanced-css-homework-demo.gif)
+

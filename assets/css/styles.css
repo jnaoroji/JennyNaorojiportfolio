@@ -11,6 +11,7 @@
     --pic: #dfc1b8;
     --darkpic: #c79a96;
   }
+  /* Styling for header */
   header {
     padding:  5px;
     display:flex;
@@ -21,7 +22,7 @@
     background:var(--background);
     color: black;
   }
-
+  /* styling for the nav bar */
   nav {
     display: flex;
     flex-direction: row;
@@ -29,6 +30,7 @@
     padding:  20px;
     margin:5px;
   }
+  /* Styling for links in nav */
   nav a{
     font-size: larger;
     text-decoration: none;
@@ -36,7 +38,7 @@
     margin: 5px;
     padding:5px;
   }
-
+  /* Styling specifies fonts and appearence of the body */
   body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
@@ -44,6 +46,7 @@
     background-color: var(--background);
     line-height: 1.5;
   }
+  /* Styling for the banner */
   .banner{
     display:flex;
     flex-direction: row;
@@ -52,12 +55,29 @@
     height: 400px;
     width: 100%;
     justify-content: space-between;
-    
+   
   }
-  h3 {
-    text-align: left;
-
+  /* Styling for the elements within the banner */
+  div, h3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-right: 20px;
+    text-decoration: underline var(--darkG);
   }
+   /* Styling for the image in the banner */
+   .profile, img {
+    position:flex;
+    flex-direction: row;
+    height: 350px;
+    width: fit-content;
+    padding: 5px;
+    border: 5px solid var(--darkG);
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  /* Styling for the Across section of the webpage */
   .Across{
     display:flex;
     flex-direction: row;
@@ -65,7 +85,7 @@
     align-items: stretch;
     justify-content: space-between;
   }
- 
+  /* styling specifies layout for the id about me */
   #aboutme {
     display: flex;
     flex-direction: row;
@@ -73,23 +93,14 @@
     padding: 20px;
     align-content: end;
   }
+  /* Styling for the paragraph within the about me section */
   .para{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 800px;
   }
-  .profile, img {
-    position:flex;
-    flex-direction: row;
-    height: 350px;
-    width: fit-content;
-    padding: 5px;
-    margin-right: 50px;
-    border: 5px solid var(--darkG);
-    border-radius: 50%;
-  }
-
+  /* Styling for my work section */
   #mywork {
     display: flex;
     flex-direction: row;
@@ -125,10 +136,8 @@
     font-weight: bolder;
     text-transform: uppercase;
     color: black;
-    
-    
   }
-  .SmallOne {
+  .SmallOne, .Portfolio {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -149,11 +158,29 @@
     background-size: cover;
     
   }
-  .SmallOne{
-    background-image: url(../images/placeholder.png) ;
+  .BigOne:hover {
+    background-image: url(../images/Bigone.jpg);
+    opacity: 50%;
     background-size: cover;
   }
-
+  .SmallOne{
+    background-image: url(../images/Study.jpeg) ;
+    background-size: cover;
+  }
+  .SmallOne:hover{
+    background-image: url(../images/Study.jpeg) ;
+    opacity: 50%;
+    background-size: cover;
+  }
+  .Portfolio{
+    background-image: url(../images/portfolio.jpeg) ;
+    background-size: cover;
+  }
+  .Portfolio:hover{
+    background-image: url(../images/portfolio.jpeg) ;
+    opacity: 50%;
+    background-size: cover;
+  }
   .BigOne > a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -172,12 +199,21 @@
     margin: 5px;
     border:1px var(--darkG);
   }
+  .Portfolio > a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: var(--Violet);
+    background-color: var(--LightG);
+    padding: 5px;
+    margin: 5px;
+    border:1px var(--darkG);
+  }
+  /* styling for all h2s */
   h2 {
     text-align: left;
   }
-
-
-  .contact, a{
+  /* Styling for contact section */
+  .contact{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -188,17 +224,23 @@
     font-size: large;
     color: black;
   }
-
- 
-  footer {
-    padding: 20px;
-    text-align: center;
-    background:var(--LightG);
-    width: 100%;
+  .info, a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px;
+    text-align: left;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: large;
+    color: black;
   }
   
+  /* Styling makes the layout responsive to my viewport */
+  /* flex-direction stacks the header, nav, Across, work and contact */
+  /* content is all aligned to center as view becomes smaller */
   @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
+   
     header, 
     nav,
     .banner
@@ -208,7 +250,8 @@
     .work,
     #mywork,
     .Total,
-    .contact {
+    .contact,
+    .info {
       flex-direction: column;
       justify-content: center;
       align-items: center;
