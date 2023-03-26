@@ -177,6 +177,17 @@
     opacity: 50%;
     background-size: cover;
   }
+  .text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--Violet);
+    background-color: var(--LightG);
+    padding: 5px;
+    margin: 5px;
+    border:1px var(--darkG);
+  }
   
   /* styling for all h2s */
   h2 {
