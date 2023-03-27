@@ -22,10 +22,9 @@ You can also click this link to the site: https://jnaoroji.github.io/JennyNaoroj
 
 Please refer to the LICENSE in the repo.
 
-## Test
+## Screenshot
 
-The Webpage should look like this:
-* The following animation shows the web application's mock appearance and functionality:
+* The following shows a screenshot of My Portfolio:
 
-![portfolio demo](./assets/images/02-advanced-css-homework-demo.gif)
+![portfolio screenshot](./assets/images/Screenshot.png)
 
