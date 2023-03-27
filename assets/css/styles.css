@@ -53,7 +53,7 @@
     background: linear-gradient(var(--darkG), var(--LightG));
     height: 400px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
    
   }
 
@@ -85,7 +85,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-right: 30px;
     padding: 20px;
   }
@@ -117,15 +117,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
+    margin-right: 30pax;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   /* styling for div with class Total */
   .Total {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
     max-width: 800px;
     padding: 10px;
     margin: 10px;
@@ -201,10 +201,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding:20px;
-    text-align: left;
-    justify-content: space-between;
-    text-decoration: none;
-    color: black;
+    margin-right: 30px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
   }
   .info, a{
     display: flex;
