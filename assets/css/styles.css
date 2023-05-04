@@ -154,7 +154,7 @@
     background-size: cover;
   }
   /* Styling for all smaller images of deployed applications */
-  .SmallOne, .Portfolio {
+  .Gif, .SmallOne, .Portfolio {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -172,6 +172,15 @@
   }
   .SmallOne:hover{
     background-image: url(../images/Study.jpeg) ;
+    opacity: 50%;
+    background-size: cover;
+  }
+  .Gif{
+    background-image: url(../images/gifitatry.png) ;
+    background-size: cover;
+  }
+  .Gif:hover{
+    background-image: url(../images/gifitatry.png) ;
     opacity: 50%;
     background-size: cover;
   }
